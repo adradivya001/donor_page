@@ -2,12 +2,97 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  .text-shadow {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans text-brand-text bg-white m-0 p-0;
+    background: linear-gradient(135deg, #fff5f7 0%, #ffffff 100%);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  #root {
+    @apply m-0 p-0;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-bold;
   }
 }
 
-html {
-  scroll-behavior: smooth;
+@layer components {
+  .section-padding {
+    @apply py-6 md:py-10;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply bg-brand-purple text-white px-8 py-4 rounded-button font-bold 
+           transition-all duration-300 hover:bg-brand-purple-hover hover:scale-[1.02]
+           shadow-purple-glow active:scale-[0.98];
+  }
+
+  .btn-secondary {
+    @apply bg-brand-pink text-white px-8 py-4 rounded-button font-bold
+           transition-all duration-300 hover:bg-brand-pink/90 hover:scale-[1.02]
+           shadow-pink-glow active:scale-[0.98];
+  }
+
+  .btn-outline {
+    @apply bg-white text-brand-pink border-2 border-brand-pink px-8 py-4 rounded-button font-bold
+           transition-all duration-300 hover:bg-brand-pink-soft hover:scale-[1.02]
+           active:scale-[0.98];
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-premium;
+  }
+
+  .nav-link {
+    @apply relative text-brand-text/70 font-medium hover:text-brand-pink transition-colors duration-200;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 border border-brand-pink/10 bg-white rounded-button focus:ring-2 focus:ring-brand-pink/20 focus:border-brand-pink outline-none transition-all duration-200;
+  }
+
+  .glass {
+    @apply bg-white/60 backdrop-blur-md border border-brand-pink/10 shadow-premium;
+  }
 }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-brand-pink-soft;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-brand-pink/40 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-brand-pink/60;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
