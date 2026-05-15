@@ -9,9 +9,9 @@ const Footer = () => {
 
   return (
     <footer className="bg-white pt-0 pb-1 border-t border-gray-100 m-0">
-      <div className="max-w-[1400px] mx-auto px-4 md:px-12 flex flex-col md:flex-row items-center justify-between">
+      <div className="max-w-[1400px] mx-auto pl-4 md:pl-6 pr-4 md:pr-12 flex flex-col md:flex-row items-center justify-between">
         {/* Logo */}
-        <div className="flex-shrink-0 overflow-visible">
+        <div className="flex-shrink-0 overflow-visible ml-[-20px]">
           <img 
             src="/janmasethu.png" 
             alt="JanmaSethu Logo" 
