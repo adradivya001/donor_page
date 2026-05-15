@@ -35,7 +35,7 @@ const Footer = () => {
         {/* Copyright & Button - Exact wording from image */}
         <div className="flex items-center gap-10">
           <p className="text-slate-400 text-[13px] font-medium hidden lg:block">
-            © 2026 JanmaSethu Fertility Grant Program. Built for the future of care.
+            © 2026 Janmsethu Trust. Empowering parenthood through your generosity.
           </p>
           <button 
             onClick={scrollToTop}
@@ -49,7 +49,7 @@ const Footer = () => {
       {/* Mobile Copyright */}
       <div className="lg:hidden pb-4 text-center">
         <p className="text-slate-400 text-[11px] font-medium px-4">
-          © 2026 JanmaSethu Fertility Grant Program. <br /> Built for the future of care.
+          © 2026 Janmsethu Trust. <br /> Empowering parenthood through your generosity.
         </p>
       </div>
     </footer>
