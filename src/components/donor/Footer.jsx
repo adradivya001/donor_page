@@ -8,7 +8,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-white border-t border-gray-100 py-6 m-0">
+    <footer className="bg-white py-4 m-0">
       <div className="w-full px-4 md:px-8 flex flex-col md:flex-row items-center justify-between gap-8">
         
         {/* Left: Logo */}
@@ -16,13 +16,7 @@ const Footer = () => {
           <img 
             src="/janmasethu.png" 
             alt="JanmaSethu Logo" 
-            style={{ 
-              height: '80px', 
-              width: 'auto', 
-              transform: 'scale(2.8)', 
-              transformOrigin: 'left center',
-              display: 'block'
-            }}
+            className="h-10 w-auto block"
           />
         </div>
 
