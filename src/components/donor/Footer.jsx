@@ -9,7 +9,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-white pt-0 pb-1 border-t border-gray-100 m-0">
-      <div className="max-w-[1400px] mx-auto pl-4 md:pl-6 pr-4 md:pr-6 flex flex-col md:flex-row items-center justify-between min-h-[96px]">
+      <div className="max-w-[1400px] mx-auto pl-4 md:pl-6 pr-4 md:pr-6 flex flex-col md:flex-row items-center justify-between min-h-[96px] py-0">
         
         {/* Left Column: Logo */}
         <div className="flex-1 flex justify-start overflow-visible">
