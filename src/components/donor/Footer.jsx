@@ -11,14 +11,18 @@ const Footer = () => {
     <footer className="bg-white pt-0 pb-1 border-t border-gray-100 m-0">
       <div className="max-w-[1400px] mx-auto px-4 md:px-12 flex flex-col md:flex-row items-center justify-between">
         {/* Logo */}
-        <div className="flex-shrink-0">
-          <div className="flex items-center h-24">
-            <img 
-              src="/janmasethu.png" 
-              alt="JanmaSethu Logo" 
-              className="h-14 md:h-18 w-auto object-contain"
-            />
-          </div>
+        <div className="flex-shrink-0 overflow-visible">
+          <img 
+            src="/janmasethu.png" 
+            alt="JanmaSethu Logo" 
+            style={{ 
+              height: '90px', 
+              width: 'auto', 
+              transform: 'scale(2.8)', 
+              transformOrigin: 'left center',
+              display: 'block'
+            }}
+          />
         </div>
 
         {/* Links - Large Spacing like image */}
