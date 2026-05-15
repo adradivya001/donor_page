@@ -47,10 +47,10 @@ const DonorExperience = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="flex flex-col min-h-screen bg-white">
       <Navbar />
       
-      <main>
+      <main className="flex-grow">
         <Hero />
         
         <ImpactSection />
