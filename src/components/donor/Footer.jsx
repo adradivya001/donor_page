@@ -25,8 +25,8 @@ const Footer = () => {
           />
         </div>
 
-        {/* Links - Large Spacing like image */}
-        <div className="flex items-center gap-12 md:gap-20 text-slate-600 font-semibold text-sm">
+        {/* Links - Strictly centered in the middle */}
+        <div className="hidden md:flex items-center gap-10 text-slate-600 font-semibold text-sm absolute left-1/2 -translate-x-1/2">
           <a href="#" className="hover:text-brand-pink transition">Privacy Policy</a>
           <a href="#" className="hover:text-brand-pink transition">Terms of Service</a>
           <a href="#" className="hover:text-brand-pink transition">Cookies</a>
